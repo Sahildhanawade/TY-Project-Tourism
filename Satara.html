@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Tourism Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      text-align: center;
+      padding: 30px 0;
+    }
+    
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin: 0;
+      color: #1a365d;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    
+    .main-content {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .info-section {
+      flex: 1;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .image-section {
+      flex: 1;
+    }
+    
+    .city-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .attractions {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    
+    .card-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    
+    .card-content {
+      padding: 15px;
+    }
+    
+    .card h3 {
+      margin-top: 0;
+      color: #1a365d;
+    }
+    
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    
+    .explore-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 15px;
+      background-color: #1a365d;
+      color: white;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      transition: background-color 0.3s;
+    }
+    
+    .explore-btn:hover {
+      background-color: #2c4f7c;
+    }
+    
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+      
+      .attractions {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .attractions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SATARA</h1>
+    </header>
+    
+    <section class="main-content">
+      <div class="info-section">
+        <h2>About Satara</h2>
+        <p>Satara is a picturesque town located at the foothills of the Sahyadri mountain range and is steeped in Maratha history. It served as a key military and administrative center during the reign of Chhatrapati Shivaji Maharaj and remains dotted with historic forts such as Ajinkyatara and Sajjangad.</p>
+        
+        <p>Beyond its history, Satara is renowned for natural beauty, especially the Kaas Plateau, known as the “Valley of Flowers” of Maharashtra. The region comes alive during the monsoon with waterfalls and vibrant landscapes, making it a haven for nature lovers, trekkers, and photographers alike.</p>
+        
+        <h3>Key Information</h3>
+        <ul>
+          <li><strong>Population:</strong> 3 million</li>
+          <li><strong>Languages:</strong> Marathi, Hindi</li>
+          <li><strong>Best Time to Visit:</strong> September to February</li>
+          <li><strong>Famous For:</strong>  Forts, Kaas Plateau, waterfalls, Maratha history</li>
+        </ul>
+      </div>
+      
+      <div class="image-section">
+        <img src="Satara.jpg" alt="Satara" class="city-image">
+      </div>
+    </section>
+    
+    <h2>Top Attractions</h2>
+    <section class="attractions">
+      <div class="card">
+        <a href="hotels.html" class="card-link" target="_blank">
+          <img src="hotel.jpg" alt="Luxury Hotel in Jaipur" class="card-image">
+          <div class="card-content">
+            <h3>Hotels</h3>
+            <p>Experience royal living in Jaipur's heritage hotels and modern luxury resorts. Many palaces have been converted into hotels offering an authentic Rajasthani experience.</p>
+            <div class="explore-btn">Explore Hotels</div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="card">
+        <a href="temples.html" class="card-link" target="_blank">
+          <img src="temple.jpg" alt="Jaipur Temple" class="card-image">
+          <div class="card-content">
+            <h3>Historic Temples</h3>
+            <p>Visit the intricate Birla Mandir, Govind Dev Ji Temple, and Galtaji Temple. These sacred sites showcase magnificent architecture and spiritual significance.</p>
+            <div class="explore-btn">Explore Temples</div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="card">
+        <a href="forts.html" class="card-link" target="_blank">
+          <img src="fort.jpeg" alt="Amer Fort" class="card-image">
+          <div class="card-content">
+            <h3>Majestic Forts</h3>
+            <p>Explore the iconic Amer Fort, Nahargarh Fort, and Jaigarh Fort. These historical fortresses offer panoramic views of the city and insights into Rajasthan's history.</p>
+            <div class="explore-btn">Explore Forts</div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="card">
+        <a href="places.html" class="card-link" target="_blank">
+          <img src="place.jpg" alt="City Palace" class="card-image">
+          <div class="card-content">
+            <h3>Places</h3>
+            <p>Discover iconic landmarks and cultural gems that celebrate the artistry, elegance, and vibrant heritage of the region.</p>
+            <div class="explore-btn">Explore Places</div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

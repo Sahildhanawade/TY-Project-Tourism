@@ -1,0 +1,9 @@
+User table
+create table users(uname varchar(30) primary key,email varchar(30),pass varchar(20)NOT NULL UNIQUE);
+
+Admin table
+create table admin(oname varchar(30) primary key,email varchar(30),pass varchar(20)NOT NULL UNIQUE);
+
+Feedback table
+create table feedback(uname varchar(20) references users(uname),username varchar(20),email varchar(60),subject varchar(20),messages varchar(500));
+

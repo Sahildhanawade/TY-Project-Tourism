@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .card {
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background-color: white;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 15px;
+        }
+        
+        .location-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .address {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .map-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #1a73e8;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        
+        .stars {
+            color: #ffc107;
+            margin-right: 5px;
+        }
+        
+        .rating-number {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        @media (max-width: 992px) {
+            .card {
+                width: calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="Pune.html">back</a>
+    <div class="container">
+        <h1>Place in Pune</h1>
+        
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="Devkund waterfall.jpg" alt="Devkund Waterfall" class="card-image">
+                <div class="card-content">
+                    <div class="location-name">Devkund Waterfall</div>
+                    <div class="address">FCJ3+R4M, Patnus, Pimpri, Maharashtra 402308</div>
+                    <a href="https://www.google.com/maps/dir//FCJ3%2BR4M,+Patnus,+Pimpri,+Maharashtra+402308/@18.4820741,73.3204014,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be81f0c3050828b:0xea76fc38e56927b9!2m2!1d73.4028031!2d18.4820919?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="map-link" target="_blank">View on Google Maps</a>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <div class="rating-number">4.7/5</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="P L Deshpande Garden.jpg" alt="P L Deshpande Garden" class="card-image">
+                <div class="card-content">
+                    <div class="location-name">P L Deshpande Garden</div>
+                    <div class="address">Pune Okayama Friendship Garden, Dattawadi, Pune, Maharashtra 411030</div>
+                    <a href="https://www.google.com/maps?rlz=1C1MSIM_enIN974IN974&sca_esv=fc3cb5d2e645d47f&lqi=CgtwdW5lIGdhcmRlbkiKlf6WAloTEAEYABgBIgtwdW5lIGdhcmRlbpIBCWNpdHlfcGFya6oBPxABKgoiBmdhcmRlbigAMh4QASIaKKxWWrK3ptSQ84N6s5qMesCziDjosA7DikIyDxACIgtwdW5lIGdhcmRlbg&phdesc=i2kn7O0f7YU&vet=12ahUKEwiVoK-8t_GMAxWDiK8BHSqIB-8Q8UF6BAgGEFw..i&lei=95QKaNXIF4ORvr0PqpCe-A4&cs=0&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KQEAAJD5v8I7MTTSmm_j45Ey&daddr=Pune+Okayama+Friendship+Garden,+Dattawadi,+Pune,+Maharashtra+411030" class="map-link" target="_blank">View on Google Maps</a>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <div class="rating-number">4.5/5</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="Blades of Glory Cricket Museum.jpg" alt="Blades of Glory Cricket Museum" class="card-image">
+                <div class="card-content">
+                    <div class="location-name">Blades of Glory Cricket Museum</div>
+                    <div class="address"> Govind Gaurav Apartments., Swanand Society Lane 1, Sahakar Nagar 2, Swanand Society, Tulshibagwale Colony, Parvati Paytha, Pune, Maharashtra 411009</div>
+                    <a href=" https://www.google.com/maps/dir//Govind+Gaurav+Apartments.,+Swanand+Society+Lane+1,+Sahakar+Nagar+2,+Swanand+Society,+Tulshibagwale+Colony,+Parvati+Paytha,+Pune,+Maharashtra+411009/@18.4859201,73.7610189,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bc2c000678774e9:0x43105612ac23419d!2m2!1d73.8434206!2d18.4859379?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D" class="map-link" target="_blank">View on Google Maps</a>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <div class="rating-number">4.6/5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple JavaScript to add interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // You could enhance this with more interactive functionality
+                    console.log('Card clicked:', this.querySelector('.location-name').textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

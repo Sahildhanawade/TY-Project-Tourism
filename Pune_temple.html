@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .card {
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background-color: white;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 15px;
+        }
+        
+        .location-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .address {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .map-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #1a73e8;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        
+        .stars {
+            color: #ffc107;
+            margin-right: 5px;
+        }
+        
+        .rating-number {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        @media (max-width: 992px) {
+            .card {
+                width: calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="Pune.html">back</a>
+    <div class="container">
+        <h1>Temple in Pune</h1>
+        
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="Wagheshwar Temple.jpg" alt="Wagheshwar Temple" class="card-image">
+                <div class="card-content">
+                    <div class="location-name">Wagheshwar Temple</div>
+                    <div class="address">Wageshwar Temple, Nagar Rd, Wagholi, Pune, Maharashtra 412105</div>
+                    <a href="https://www.google.com/maps/dir//Wageshwar+Temple,+Nagar+Rd,+Wagholi,+Pune,+Maharashtra+412105/@18.5817407,73.8953195,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bc2c6393a6d7bf3:0x2f6b86463fa9e859!2m2!1d73.9777212!2d18.5817586?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="map-link" target="_blank">View on Google Maps</a>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <div class="rating-number">4.7/5</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="Shri Mahalaxmi Mandir.jpg" alt="Shri Mahalaxmi Mandir" class="card-image">
+                <div class="card-content">
+                    <div class="location-name">Shri Mahalaxmi Mandir</div>
+                    <div class="address">Plot No. 38/B, opposite Sarasbaug, Dadawadi, Shukrawar Peth, Pune, Maharashtra 411002
+</div>
+                    <a href="https://www.google.com/maps?rlz=1C1MSIM_enIN974IN974&sca_esv=fc3cb5d2e645d47f&lqi=CgxwdW5lIHRlbXBsZXNIpf2jh5qqgIAIWhQQARgAGAEiDHB1bmUgdGVtcGxlc5IBDGhpbmR1X3RlbXBsZaoBQhABKgsiB3RlbXBsZXMoADIfEAEiGyHJzXqEac3a41l1gYO4idsb3ZeXqd8wajZCKzIQEAIiDHB1bmUgdGVtcGxlcw&phdesc=EbLm66Svy5Q&vet=12ahUKEwiItfGqrfGMAxVknK8BHefdN8UQ8UF6BAgGEFw..i&lei=VooKaIiyFuS4vr0P57vfqQw&cs=0&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KXUsmuQRwMI7MTHcbSQwTiFE&daddr=Plot+No.+38/B,+opposite+Sarasbaug,+Dadawadi,+Shukrawar+Peth,+Pune,+Maharashtra+411002" class="map-link" target="_blank">View on Google Maps</a>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <div class="rating-number">4.8/5</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="BAPS Shri Swaminarayan Temple.jpg" alt="BAPS Shri Swaminarayan Temple" class="card-image">
+                <div class="card-content">
+                    <div class="location-name">BAPS Shri Swaminarayan Temple</div>
+                    <div class="address">A1-B1, Mumbai-Bengaluru National Higway, 4, Narhe Ambegaon Rd, Narhe, Pune, Maharashtra 411041</div>
+                    <a href="https://www.google.com/maps/dir//A1-B1,+Mumbai-Bengaluru+National+Higway,+4,+Narhe+Ambegaon+Rd,+Narhe,+Pune,+Maharashtra+411041/@18.4420639,73.7541139,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bc295da5a174d1b:0x2445eee2ace04bb3!2m2!1d73.8365156!2d18.4420817?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="map-link" target="_blank">View on Google Maps</a>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <div class="rating-number">4.6/5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple JavaScript to add interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // You could enhance this with more interactive functionality
+                    console.log('Card clicked:', this.querySelector('.location-name').textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
