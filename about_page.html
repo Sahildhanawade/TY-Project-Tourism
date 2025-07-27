@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Maharashtra - Maharashtra Tourism</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #e67e22;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        section.about {
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #e67e22;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .cities {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .city {
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .city:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .city h3 {
+            font-size: 1.5rem;
+            color: #e67e22;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .city p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .points-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .points-list li {
+            font-size: 1rem;
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+            color: #666;
+        }
+
+        .points-list li:before {
+            content: "•";
+            color: #e67e22;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .cities {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Maharashtra Tourism</h1>
+            <p>Experience the Heart of India</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Maharashtra</h2>
+            <p>Maharashtra is a vibrant state in the western region of India, renowned for its rich cultural heritage, historical significance, and diverse natural landscapes. From bustling metropolitan areas to serene beaches and majestic mountain ranges, Maharashtra offers an exceptional experience for every traveler.</p>
+            <p>Home to the financial capital of India, Mumbai, the state combines contemporary urban lifestyle with traditional values, making it a unique destination for both domestic and international tourists.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Explore Our Cities</h2>
+            <div class="cities">
+                <div class="city">
+                    <h3>Pune</h3>
+                    <p>Pune is a thriving metropolis that harmoniously blends modernity with tradition, serving as a major educational and technological hub while preserving its rich cultural heritage.</p>
+                    <ul class="points-list">
+                        <li>Home to prestigious educational institutions like FTII and Pune University</li>
+                        <li>Historical sites including Shaniwar Wada and Aga Khan Palace</li>
+                        <li>Gateway to hill stations like Lonavala and Khandala</li>
+                        <li>Renowned for its distinctive cuisine featuring Misal Pav and Bhakarwadi</li>
+                        <li>Vibrant cultural scene with numerous cafes, theaters, and music festivals</li>
+                    </ul>
+                </div>
+                
+                <div class="city">
+                    <h3>Solapur</h3>
+                    <p>Solapur stands as an important cultural and industrial center, distinguished by its rich textile heritage, ancient temples, and historical landmarks.</p>
+                    <ul class="points-list">
+                        <li>Famous for its handloom industry and the renowned Solapur chaddars</li>
+                        <li>Home to the sacred Siddheshwar Temple, a significant pilgrimage destination</li>
+                        <li>Historical sites including Bhuikot Fort and Solapur Fort</li>
+                        <li>Thriving textile industry with numerous power looms</li>
+                        <li>Proximity to Pandharpur Temple, one of the holiest sites for devotees of Lord Vithoba</li>
+                    </ul>
+                </div>
+                
+                <div class="city">
+                    <h3>Kolhapur</h3>
+                    <p>Kolhapur boasts a distinguished royal heritage, remarkable temples, and a distinctive culinary tradition that attracts visitors from across the country.</p>
+                    <ul class="points-list">
+                        <li>Home to the revered Mahalakshmi Temple, a center of spiritual significance</li>
+                        <li>Renowned for Kolhapuri chappals, distinctive handcrafted footwear</li>
+                        <li>Celebrated for its distinctive cuisine, particularly spicy Misal and Tambda Rassa</li>
+                        <li>Historical Panhala Fort offers panoramic views and rich history</li>
+                        <li>Cultural landmarks including the Rankala Lake and New Palace Museum</li>
+                    </ul>
+                </div>
+                
+                <div class="city">
+                    <h3>Satara</h3>
+                    <p>Satara is a city of historical significance surrounded by breathtaking natural beauty, featuring UNESCO-listed sites and ancient fortifications.</p>
+                    <ul class="points-list">
+                        <li>Home to the UNESCO World Heritage site Kaas Plateau, known as Maharashtra's Valley of Flowers</li>
+                        <li>Historical forts including Ajinkyatara and Sajjangad</li>
+                        <li>Surrounded by picturesque landscapes featuring waterfalls and valleys</li>
+                        <li>Thoseghar Waterfalls serve as a premier natural attraction</li>
+                        <li>Rich cultural traditions celebrated through annual festivals such as the Satara Folk Festival</li>
+                    </ul>
+                </div>
+                
+                <div class="city">
+                    <h3>Ratnagiri</h3>
+                    <p>Ratnagiri is a captivating coastal destination known for its pristine beaches, historic fortifications, and world-famous Alphonso mangoes.</p>
+                    <ul class="points-list">
+                        <li>Pristine beaches including the sacred Ganpatipule and tranquil Mandavi</li>
+                        <li>Historic Ratnadurg Fort offers spectacular views of the Arabian Sea</li>
+                        <li>The revered Bhagwati Temple nestled in picturesque surroundings</li>
+                        <li>Birthplace of national leader Lokmanya Tilak</li>
+                        <li>Global reputation for producing premium Alphonso mangoes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Maharashtra Tourism. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
