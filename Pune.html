@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Tourism Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      text-align: center;
+      padding: 30px 0;
+    }
+    
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin: 0;
+      color: #1a365d;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    
+    .main-content {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .info-section {
+      flex: 1;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .image-section {
+      flex: 1;
+    }
+    
+    .city-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .attractions {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    
+    .card-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    
+    .card-content {
+      padding: 15px;
+    }
+    
+    .card h3 {
+      margin-top: 0;
+      color: #1a365d;
+    }
+    
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    
+    .explore-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 15px;
+      background-color: #1a365d;
+      color: white;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      transition: background-color 0.3s;
+    }
+    
+    .explore-btn:hover {
+      background-color: #2c4f7c;
+    }
+    
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+      
+      .attractions {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .attractions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="map.php">back</a>
+    <header>
+
+      <h1>PUNE</h1>
+    </header>
+    
+    <section class="main-content">
+      <div class="info-section">
+        <h2>About Pune</h2>
+        <p>Pune, the cultural capital of Maharashtra, is a dynamic blend of tradition and modernity. Known as the "Oxford of the East" due to its prestigious educational institutions, Pune has a youthful energy fueled by students, tech professionals, and artists alike. Once the stronghold of the Maratha Empire under Peshwa rule, the city now stands as a thriving hub for the IT and automotive industries, while preserving its historical landmarks like Shaniwar Wada and Aga Khan Palace.</p>
+        
+        <p>The city is also celebrated for its vibrant arts and music scene, with numerous festivals and cultural programs held year-round. Pleasant weather, bustling markets, green parks, and a diverse food scene from street misal pav to gourmet dining make Pune a favorite destination for travelers and students.</p>
+        
+        <h3>Key Information</h3>
+        <ul>
+          <li><strong>Population:</strong> 7.52 million</li>
+          <li><strong>Languages:</strong> Marathi, Hindi</li>
+          <li><strong>Best Time to Visit:</strong> October to February</li>
+          <li><strong>Famous For:</strong> Education, history, IT industry, cultural events</li>
+        </ul>
+      </div>
+      
+      <div class="image-section">
+        <img src="Pune.png" alt="Pune" class="city-image">
+      </div>
+    </section>
+    
+    <h2>Top Attractions</h2>
+    <section class="attractions">
+      <div class="card">
+        <a href="http://localhost/Project%20TYCPU/index1.php?city=pune" class="card-link" target="_blank">
+          <img src="hotel.jpg" alt="Luxury Hotel in Jaipur" class="card-image">
+          <div class="card-content">
+            <h3>Hotels</h3>
+            <p>Experience royal living in Jaipur's heritage hotels and modern luxury resorts. Many palaces have been converted into hotels offering an authentic Rajasthani experience.</p>
+          </div>
+        </a>
+      </div>
+      
+      <div class="card">
+        <a href="Pune_temple.html" class="card-link" target="_blank">
+          <img src="temple.jpg" alt="Pune Temple" class="card-image">
+          <div class="card-content">
+            <h3>Historic Temples</h3>
+            <p>Visit the intricate Birla Mandir, Govind Dev Ji Temple, and Galtaji Temple. These sacred sites showcase magnificent architecture and spiritual significance.</p>
+          </div>
+        </a>
+      </div>
+      
+      <div class="card">
+        <a href="Pune_fort.html" class="card-link" target="_blank">
+          <img src="fort.jpeg" alt="Amer Fort" class="card-image">
+          <div class="card-content">
+            <h3>Majestic Forts</h3>
+            <p>Explore the iconic Amer Fort, Nahargarh Fort, and Jaigarh Fort. These historical fortresses offer panoramic views of the city and insights into Rajasthan's history.</p>
+          </div>
+        </a>
+      </div>
+      
+      <div class="card">
+        <a href="Pune_place.html" class="card-link" target="_blank">
+          <img src="place.jpg" alt="City Place" class="card-image">
+          <div class="card-content">
+            <h3>Places</h3>
+            <p>Discover iconic landmarks and cultural gems that celebrate the artistry, elegance, and vibrant heritage of the region.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Information Submission</title>
+    <style>
+      body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .form-container {
+            background: white;
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            margin: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .form-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        h2 {
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        input, textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px 15px;
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        
+        input:focus, textarea:focus {
+            border-color: #4facfe;
+            box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.15);
+            outline: none;
+        }
+        
+        input[type="file"] {
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px dashed #ccc;
+        }
+        
+        button {
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Submit Your Hotel Information</h2>
+    <form action="send_email.php" method="POST" enctype="multipart/form-data">
+        <label>Hotel Name:</label>
+        <input type="text" name="hotel_name" required>
+
+        <label>Owner Name:</label>
+        <input type="text" name="owner_name" required>
+
+        <label>Google Map Link:</label>
+        <input type="url" name="map_link" required>
+
+        <label>Location:</label>
+        <textarea name="location" rows="3" required></textarea>
+
+        <label>Upload Hotel Photo:</label>
+        <input type="file" name="hotel_photo" accept="image/*" required>
+
+        <button type="submit">Send to Admin</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .card {
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background-color: white;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 15px;
+        }
+        
+        .location-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .address {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .map-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #1a73e8;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        
+        .stars {
+            color: #ffc107;
+            margin-right: 5px;
+        }
+        
+        .rating-number {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        @media (max-width: 992px) {
+            .card {
+                width: calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="Pune.html">back</a>
+    <div class="container">
+        <h1>Fort in Pune</h1>
+        
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="Raigad Fort.jpg" alt="Raigad Fort" class="card-image">
+                <div class="card-content">
+                    <div class="location-name">Raigad Fort</div>
+                    <div class="address">Raigad Fort, Raigad, Maharashtra 402305</div>
+                    <a href="https://www.google.com/maps/dir//Raigad,+Maharashtra+402305/@18.2334503,73.3582886,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be8283eb38b1ce5:0xfc31826ad34a5b70!2m2!1d73.4406903!2d18.2334679?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="map-link" target="_blank">View on Google Maps</a>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <div class="rating-number">4.7/5</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="Shivneri Fort.jpeg" alt="Shivneri Fort" class="card-image">
+                <div class="card-content">
+                    <div class="location-name">Shivneri Fort</div>
+                    <div class="address">Shivneri Fort, 5VV4+65Q, Unnamed Road, Kusur, Junnar, Maharashtra 410502</div>
+                    <a href="https://www.google.com/maps/dir//5VV4%2B65Q,+Unnamed+Road,+Kusur,+Junnar,+Maharashtra+410502/@19.1930765,73.7730692,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bdd3f8514d939fd:0x9c181be126c73de1!2m2!1d73.8554709!2d19.1930949?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="map-link" target="_blank">View on Google Maps</a>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <div class="rating-number">4.7/5</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="Tikona Fort.jpg" alt="☆" class="card-image">
+                <div class="card-content">
+                    <div class="location-name">Tikona Fort</div>
+                    <div class="address">JGJ7+P4J, Tikona, Tikonapeth tal, dist, Mulshi, Maharashtra 412108</div>
+                    <a href="https://www.google.com/maps/dir//JGJ7%2BP4J,+Tikona,+Tikonapeth+tal,+dist,+Mulshi,+Maharashtra+412108/@18.6318251,73.4303486,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bc2a62ca9e0a347:0xd414b4c88b98a175!2m2!1d73.5127503!2d18.631843?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="map-link" target="_blank">View on Google Maps</a>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <div class="rating-number">4.6/5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple JavaScript to add interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // You could enhance this with more interactive functionality
+                    console.log('Card clicked:', this.querySelector('.location-name').textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

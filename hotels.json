@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Royal Pune",
+        "address": "NEAR GURUDATT HOTEL,JAYSHREE NIVAS,SR NO-26\/6\/A\/2,GURUDATTA NAGAR,PIMPLE GURAV,Pune,Maharashtra - 411027\r\nNEAR GURUDATT HOTEL,JAYSHREE NIVAS,SR NO-26\/6\/A\/2,GURUDATTA NAGAR,PIMPLE GURAV,Pune,Maharashtra - 411027",
+        "map": "https:\/\/maps.google.com\/",
+        "email": "sujit.sawant22@iccs.ac.in",
+        "owner": "Sujit",
+        "phone": "09850684018",
+        "photo": "uploads\/PuneHotel.jfif"
+    },
+    {
+        "name": "Kolhapur Vada",
+        "address": "NEAR GURUDATT HOTEL,JAYSHREE NIVAS,SR NO-26\/6\/A\/2,PIMPLE GURAV,Kolhapur,Maharashtra - 411027\r\nNEAR GURUDATT HOTEL,JAYSHREE NIVAS,SR NO-26\/6\/A\/2,PIMPLE GURAV,Kolhapur,Maharashtra - 411027",
+        "map": "https:\/\/maps.google.com\/",
+        "email": "sujit.sawant22@iccs.ac.in",
+        "owner": "Sujit",
+        "phone": "09850684018",
+        "photo": "uploads\/KolhapurHotel.jfif"
+    },
+    {
+        "name": "Satara Mention",
+        "address": "NEAR GURUDATT HOTEL,JAYSHREE NIVAS,SR NO-26\/6\/A\/2,GURUDATTA NAGAR,Satara,Maharashtra - 411027\r\nNEAR GURUDATT HOTEL,JAYSHREE NIVAS,SR NO-26\/6\/A\/2,GURUDATTA NAGAR,Satara,Maharashtra - 411027",
+        "map": "https:\/\/maps.google.com\/",
+        "email": "sujit.sawant22@iccs.ac.in",
+        "owner": "Sahil",
+        "phone": "9595685744",
+        "photo": "uploads\/SataraHotel.jfif"
+    },
+    {
+        "name": "Solapurkar Niwas",
+        "address": "NEAR GURUDATT HOTEL,JAYSHREE NIVAS,SR NO-26\/6\/A\/2,Solapur,Maharashtra - 411027\r\nNEAR GURUDATT HOTEL,JAYSHREE NIVAS,SR NO-26\/6\/A\/2,Solapur,Maharashtra - 411027",
+        "map": "https:\/\/maps.google.com\/",
+        "email": "sujit.sawant22@iccs.ac.in",
+        "owner": "Anil",
+        "phone": "09850684018",
+        "photo": "uploads\/SolapurHotel.jfif"
+    },
+    {
+        "name": "Monarch Montvert",
+        "address": "Pune",
+        "map": "http:\/\/maps.googlecom.",
+        "email": "sammy@gamil.com",
+        "owner": "rohit",
+        "phone": "900006543",
+        "photo": "uploads\/1745822248_Untitled.jpeg"
+    }
+]
